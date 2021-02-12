@@ -29,7 +29,7 @@ const request = (url, method = 'GET', data = {}) => {
   );
 
   return res;
-}
+};
 
 const app = document.querySelector('#app');
 
@@ -121,7 +121,7 @@ const createCard = (task) => {
   );
 
   return card;
-}
+};
 
 const createList = async () => {
   const list = createEl();
@@ -137,7 +137,7 @@ const createList = async () => {
   list.append(...taskCards);
 
   return list;
-}
+};
 
 async function render() {
   clearChildren(app);
